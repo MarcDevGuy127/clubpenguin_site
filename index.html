@@ -12,7 +12,6 @@
     <h1 class="text-3xl font-bold">Welcome to My Website</h1>
     <p class="mt-2">This is a sample page using Tailwind CSS.</p>
   </header>
-
   <div class="flex justify-left mx-auto flex mt-6">
     <nav class="w-1/5 bg-white p-4 shadow font-bold">
       <a href="#home" class="block mb-3 text-blue-600 hover:text-blue-800">Home</a>
@@ -28,14 +27,16 @@
         <h2 class="text-2xl font-semibold">Article 2</h2>
         <p class="mt-2">This is the content of the second article.</p>
       </article>
-      <article>
+      <article class="mb-6 py-10">
         <h2 class="text-2xl font-semibold">Article 3</h2>
-        <img class="w-64 h-48 flex justify-end object-cover float-start responsive-img shadow-lg rounded-lg" src="/images/banana.jpg" />
-        <p class="text-justify md:text-left p-4">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
-        <p class="text-justify md:text-left p-2">Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
-        <p class="text-justify md:text-left p-2">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+        <img class="w-64 h-48 flex mr-4 float-start responsive-img shadow-lg rounded-lg" src="/images/banana.jpg" />
+        <p class="text-justify py-4">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
+        <p class="text-justify py-4">Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
+        <p class="text-justify py-4">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
       </article>
       <div class="col-span-full">
+        <label>Title</label><br><!--ADICIONAR LIMITE DE CARACTERES-->
+        <input for="about" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
         <label for="about" class="block text-sm/6 font-medium text-gray-900">Text</label>
         <div class="mt-2">
           <textarea name="about" id="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
@@ -49,7 +50,6 @@
             <svg class="mx-auto size-12 text-gray-300" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" data-slot="icon">
               <path fill-rule="evenodd" d="M1.5 6a2.25 2.25 0 0 1 2.25-2.25h16.5A2.25 2.25 0 0 1 22.5 6v12a2.25 2.25 0 0 1-2.25 2.25H3.75A2.25 2.25 0 0 1 1.5 18V6ZM3 16.06V18c0 .414.336.75.75.75h16.5A.75.75 0 0 0 21 18v-1.94l-2.69-2.689a1.5 1.5 0 0 0-2.12 0l-.88.879.97.97a.75.75 0 1 1-1.06 1.06l-5.16-5.159a1.5 1.5 0 0 0-2.12 0L3 16.061Zm10.125-7.81a1.125 1.125 0 1 1 2.25 0 1.125 1.125 0 0 1-2.25 0Z" clip-rule="evenodd" />
             </svg>
-            <img class="w-48 h-36 rounded-lg" src="images/gallery_icon.png">
             <div class="mt-4 flex text-sm/6 text-gray-600">
               <label for="file-upload" class="relative cursor-pointer rounded-md bg-white font-semibold text-indigo-600 focus-within:ring-2 focus-within:ring-indigo-600 focus-within:ring-offset-2 focus-within:outline-hidden hover:text-indigo-500">
                 <span>Upload a file</span>
@@ -60,9 +60,11 @@
             <p class="text-xs/5 text-gray-600">PNG, JPG, GIF up to 10MB</p>
           </div>
         </div>
-        <button class="flex justify-right bg-purple-800 text-white font-semibold py-1 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
-          Send
-        </button>
+        <div class="flex flex-col items-center justify-center min-h-[25vh]">
+          <button type="button" class="bg-purple-800 text-white font-semibold py-1 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+            Send
+          </button>
+        </div>                      
       </div>
     </main>
     <aside class="w-1/5 bg-white p-4 shadow">
@@ -73,6 +75,7 @@
         <li><a href="#link3" class="text-blue-600 hover:text-blue-800">Link 3</a></li>
       </ul>
     </aside>
+    </div>
   </div>
 
   <footer class="bg-blue-800 text-white text-center py-4 mt-6">
