@@ -29,17 +29,25 @@
       </article>
       <article class="mb-6 py-10">
         <h2 class="text-2xl font-semibold">Article 3</h2>
-        <img class="w-64 h-48 flex mr-4 float-start responsive-img shadow-lg rounded-lg" src="/images/banana.jpg" />
+        <img alt="Banana!" class="w-64 h-48 flex mr-4 float-start responsive-img shadow-lg rounded-lg" src="/images/banana.jpg" />
         <p class="text-justify py-4">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
         <p class="text-justify py-4">Look. If you think this is about overdue fines and missing books, you'd better think again. This is about that kid's right to read a book without getting his mind warped! Or: maybe that turns you on, Seinfeld; maybe that's how y'get your kicks. You and your good-time buddies.</p>
         <p class="text-justify py-4">Maybe we can live without libraries, people like you and me. Maybe. Sure, we're too old to change the world, but what about that kid, sitting down, opening a book, right now, in a branch at the local library and finding drawings of pee-pees and wee-wees on the Cat in the Hat and the Five Chinese Brothers? Doesn't HE deserve better?
       </article>
       <div class="col-span-full">
-        <label>Title</label><br><!--ADICIONAR LIMITE DE CARACTERES-->
+        <hr>
+        <h1 class="text-center font-medium">Create a post! Answer the forms and see what happens ;)!</h1>
+        <label class="font-medium">Title</label><br><!--ADICIONAR LIMITE DE CARACTERES-->
         <input for="about" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+        <p class="mt-3 text-sm/6 text-gray-600">Write a title for the post.</p>
         <label for="about" class="block text-sm/6 font-medium text-gray-900">Text</label>
-        <div class="mt-2">
+        <div class="mt-2"><!--TEXTAREA-->
           <textarea name="about" id="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6"></textarea>
+          <div class="space-x-4">
+            <button onclick="applyEffect('bold')">B</button>
+            <button onclick="applyEffect('italic')">I</button>
+            <button onclick="applyEffect('underline')">U</button>
+          </div>
         </div>
         <p class="mt-3 text-sm/6 text-gray-600">Write a few sentences about yourself.</p>
       </div>
@@ -62,7 +70,7 @@
         </div>
         <div class="flex flex-col items-center justify-center min-h-[25vh]">
           <button type="button" class="bg-purple-800 text-white font-semibold py-1 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
-            Send
+            Publish
           </button>
         </div>                      
       </div>
@@ -81,5 +89,6 @@
   <footer class="bg-blue-800 text-white text-center py-4 mt-6">
     <p>&copy; 2025 My Website. All rights reserved.</p>
   </footer>
+  <script src="/scripts/index.js"></script>
 </body>
 </html>
